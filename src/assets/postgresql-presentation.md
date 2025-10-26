@@ -1,13 +1,12 @@
 ---
-title: "PostgreSQL Presentation"
-layout: post
-author: Group A
+Title: "PostgreSQL Presentation"
+author: Group A: Jianing Xue B01812701 | Xinrui Gao B01819974 | Weixue Kong B01819838 | Fang Tang B01814427
 date: 2025-10-21
 ---
 
 # PostgreSQL Presentation
 
-Welcome to our presentation on PostgreSQL — an open-source, robust, and high-performance relational database system.
+Welcome to our presentation on PostgreSQL.
 
 ## Table of Contents
 - [Part 01: What is a Database?](#part-01-what-is-a-database)
@@ -22,16 +21,11 @@ Welcome to our presentation on PostgreSQL — an open-source, robust, and high-p
 ## Slide 1
 ![Slide 1](/Group-A-PostgreSQL/images/slide1.png)
 
-PostgreSQL  
-Open source  
-Robust  
-High Performance  
-Jianing Xue B01812701 | Xinrui Gao B01819974 | Weixue Kong B01819838 | Fang Tang B01814427
+Postgresql is one of the most popular databases. And the cool thing about it is that it is open source, robust, high performance, and it comes with a lot of great features.
 
 ## Slide 2
 ![Slide 2](/Group-A-PostgreSQL/images/slide2.png)
-
-CONTENTS
+presentation will be divided into four main parts.
 
 ## Slide 3
 ![Slide 3](/Group-A-PostgreSQL/images/slide3.png)
@@ -41,9 +35,9 @@ What is a Database?
 
 ## Slide 4
 ![Slide 4](/Group-A-PostgreSQL/images/slide4.png)
+A database system is a A structured collection of related data items that is stored on secondary storage devices.
+And it features rapid access and manipulation of the data.  Basically, aside of storing data, a database facilitates data management.
 
-Managed by a database management system, which ensures data integrity, security, and efficient organization of information.  
-Relational Database： structured in tabular form.
 
 ## Slide 5
 ![Slide 5](/Group-A-PostgreSQL/images/slide5.png)
