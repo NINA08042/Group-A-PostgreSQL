@@ -1,12 +1,14 @@
-# Ignore build output
+# dependencies & build
+node_modules/
 dist/
 
-# Ignore dependencies
-node_modules/
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# Ignore log files
-*.log
-
-# Ignore system files
+# editor/system
 .DS_Store
 Thumbs.db
+.vscode/
