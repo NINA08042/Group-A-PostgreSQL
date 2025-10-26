@@ -1,8 +1,8 @@
 ---
-title: "PostgreSQL Code Explanation"
-layout: post
-author: Group A
-date: 2025-10-21
+Title: "PostgreSQL Presentation"
+author: >
+  Group A — 
+  Jianing Xue B01812701 | Xinrui Gao B01819974 | Weixue Kong B01819838 | Fang Tang B01814427
 ---
 
 # Code Explanation — 15 Short Demos
