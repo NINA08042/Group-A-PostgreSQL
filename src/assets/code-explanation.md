@@ -11,15 +11,19 @@ author: >
 <video src="/Group-A-PostgreSQL/videos/code1.mp4" controls></video>
 **basic_sql_syntax**
 
-This script demonstrates the fundamentals of SQL operations. It uses ***CREATE TABLE*** to define a simple table (such as users or products), ***INSERT INTO*** to add sample rows, and ***SELECT*** to query data. It also includes examples of UPDATE for modifying records and ***DELETE*** for removing them. In short, it’s a ***basic CRUD (Create, Read, Update, Delete)*** demonstration for beginners.
+This script covers the very basics of SQL — it uses CREATE TABLE to define a table, INSERT INTO to add data, SELECT to query it, and demonstrates UPDATE and DELETE for modifying or removing records. It’s basically a crash course in the ***CRUD*** operations — ***Create, Read, Update, and Delete*** — the foundation of all database work.
 
-## 2. Creating a Table
+## 2. index_types
 <video src="/Group-A-PostgreSQL/videos/code2.mp4" controls></video>
-Explanation: Define `employees` with PK and types.
+**index_types**
 
-## 3. Inserting Data
+Here you’ll find examples of different ***index types*** in PostgreSQL: ***B-tree, Hash, GIN, GiST, and BRIN***. The script shows how to create each one and explains when to use them — for example, ***B-tree*** for general lookups, ***GIN*** for ***full-text search***, and ***BRIN*** for ***large sequential data***. It’s a hands-on introduction to how ***indexes improve query performance***.
+
+## 3. index_management
 <video src="/Group-A-PostgreSQL/videos/code3.mp4" controls></video>
-Explanation: `INSERT` rows safely.
+**index_management**
+
+This code focuses on ***index maintenance***. It includes commands like REINDEX (rebuild), DROP INDEX (delete), and ALTER INDEX (rename). The goal is to show how to keep indexes ***efficient and up-to-date***, especially when data changes often and causes ***fragmentation***.
 
 ## 4. Querying Data
 <video src="/Group-A-PostgreSQL/videos/code4.mp4" controls></video>
