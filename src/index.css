@@ -1,12 +1,18 @@
-/* Modern PostgreSQL Learning Hub Theme */
-* { margin: 0; padding: 0; box-sizing: border-box; }
+/* === Modern PostgreSQL Learning Hub Theme === */
+
+/* Reset & base style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  font-family: 'Inter', 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #f7faff, #eef3ff);
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: linear-gradient(135deg, #f7faff 0%, #eef3ff 100%);
   color: #1a1a1a;
-  min-height: 100vh;
   line-height: 1.7;
+  min-height: 100vh;
 }
 
 /* Navbar */
@@ -14,38 +20,151 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 32px;
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(12px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.navbar h2 { font-weight: 700; color: #1a1a1a; }
+.navbar h2 {
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: 0.5px;
+}
 
-.navbar ul { display: flex; list-style: none; gap: 28px; }
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
 .navbar ul li a {
-  text-decoration: none; color: #333; font-weight: 500;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
   transition: all 0.25s ease;
 }
-.navbar ul li a:hover { color: #0078ff; text-shadow: 0 0 8px rgba(0,120,255,0.3); }
 
-/* Page Layout */
+.navbar ul li a:hover {
+  color: #0078ff;
+  text-shadow: 0 0 8px rgba(0, 120, 255, 0.3);
+}
+
+/* Page layout */
 .page {
   max-width: 900px;
   background: white;
   margin: 60px auto;
   padding: 40px 50px;
   border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
 }
 
-/* Markdown Enhancements */
-.markdown-body video, .markdown-body img {
-  width: 100%; max-width: 800px; display: block; margin: 20px auto;
-  border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+/* Headings */
+.page h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0078ff;
+  margin-bottom: 20px;
+}
+
+.page h2 {
+  font-size: 1.4rem;
+  color: #1f2937;
+  border-left: 4px solid #0078ff;
+  padding-left: 12px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Paragraphs */
+.page p {
+  margin-bottom: 16px;
+  color: #333;
+}
+
+/* Lists */
+.page ul, .page ol {
+  padding-left: 25px;
+  margin-bottom: 16px;
+}
+
+.page li {
+  margin-bottom: 8px;
+}
+
+/* Code blocks */
+pre, code {
+  font-family: "Fira Code", monospace;
+  background: #f5f7fa;
+  color: #0050a0;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+pre {
+  display: block;
+  padding: 16px;
+  overflow-x: auto;
+  background: #1e1e2e;
+  color: #c7d0dd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 24px;
+  background: linear-gradient(90deg, #0078ff 0%, #6d6dfd 100%);
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 60px;
+}
+
+/* Links inside content */
+.page a {
+  color: #0078ff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.page a:hover {
+  text-decoration: underline;
+}
+
+/* Markdown body tweaks */
+.markdown-body img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin: 10px 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16px 0;
+}
+
+.markdown-body th, .markdown-body td {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+}
+
+.markdown-body tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.markdown-body video {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .markdown-body figure {
@@ -70,9 +189,3 @@ body {
 }
 
 
-/* Footer */
-footer {
-  text-align: center; padding: 24px;
-  background: linear-gradient(90deg, #0078ff 0%, #6d6dfd 100%);
-  color: white; margin-top: 60px;
-}
