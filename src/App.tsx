@@ -1,31 +1,31 @@
-import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
-import Home from "./pages/Home";
-import Presentation from "./pages/Presentation";
-import Tutorial from "./pages/Tutorial";
-import CodeExplanation from "./pages/CodeExplanation";
+import { Link } from "react-router-dom";
 
 export default function App() {
   return (
-    <div>
+    <div className="wrap">
       <nav className="navbar">
-        <h2>Group A: PostgreSQL</h2>
+        <h1>Group A — PostgreSQL</h1>
         <ul>
-          <li><Link to="/">Home</Link></li>
           <li><Link to="/presentation">Presentation</Link></li>
           <li><Link to="/tutorial">Tutorial</Link></li>
           <li><Link to="/code">Code Explanation</Link></li>
         </ul>
       </nav>
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/presentation" element={<Presentation />} />
-        <Route path="/tutorial" element={<Tutorial />} />
-        <Route path="/code" element={<CodeExplanation />} />
-      </Routes>
+      <main className="home">
+        <h2>Welcome</h2>
+        <p>
+          This site showcases our PostgreSQL presentation, tutorial guide, and code explanation
+          with rich media (images & videos) rendered from Markdown files.
+        </p>
+        <div className="quick-links">
+          <Link to="/presentation" className="btn">Go to Presentation</Link>
+          <Link to="/tutorial" className="btn">Open Tutorial</Link>
+          <Link to="/code" className="btn">View Code Explanation</Link>
+        </div>
+      </main>
 
-      <footer>© 2025 Group A | PostgreSQL Learning Hub</footer>
+      <footer>© 2025 Group A</footer>
     </div>
   );
 }
