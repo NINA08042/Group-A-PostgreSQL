@@ -111,7 +111,9 @@ This eight-step setup takes you from the **installer launch** to a fully working
 Follow the prompts, keep an eye on the **Include Java** option, and within minutes you’ll be ready to connect to databases and start querying.
 
 
-## Step 2 — Install PostgreSQL
+## Install PostgreSQL
+
+![Step 2](/Group-A-PostgreSQL/images/tutorial-step9.png)
 
 
 ## Step 3 — Verify Installation
