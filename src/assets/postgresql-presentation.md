@@ -191,6 +191,7 @@ We’ll use graphic user interface DBeaver to interact with PostgreSQL visually.
 We provide the download link for both tools here. After downloading and installing them both, open dbeaver.
 
 Tools:
+
 DBeaver (GUI): https://dbeaver.io/download/
 
 PostgreSQL 17/18 (Core DBMS): https://www.postgresql.org/download/
@@ -247,7 +248,7 @@ Together, these two scripts demonstrate the full life cycle of relational data m
 <video src="/Group-A-PostgreSQL/videos/slide22.mp4" controls></video>
 **Topic:** Database Management
 Database management is also possible using postgresql
-
+This SQL script is used to manage PostgreSQL databases: it first deletes any existing database named **mydb**, then creates a new one with UTF-8 encoding, U.S. English locale, and no connection limit under the postgres owner; it also includes optional commands to connect to the new database, list all databases, and remove an old database named **olddb** if it exists.
 
 ## 🎥 Slide 23 (Video)
 <video src="/Group-A-PostgreSQL/videos/slide23.mp4" controls></video>
