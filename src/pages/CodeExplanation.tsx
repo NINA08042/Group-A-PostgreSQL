@@ -1,37 +1,24 @@
+import React from "react";
+
 export default function CodeExplanation() {
   return (
     <div className="page">
-      <h1>PostgreSQL Code Examples</h1>
-
-      <h2>Python Connection Example</h2>
-      <pre><code className="language-python">
-{`import psycopg2
-
-conn = psycopg2.connect(
-    host="localhost",
-    database="testdb",
-    user="postgres",
-    password="yourpassword"
-)
-cur = conn.cursor()
-cur.execute("SELECT * FROM users;")
-print(cur.fetchall())
-conn.close()`}
-      </code></pre>
-
-      <h2>SQL CRUD Example</h2>
-      <pre><code className="language-sql">
-{`CREATE TABLE users (
+      <h1>💻 Code Explanation</h1>
+      <p>
+        Here we explain key parts of our PostgreSQL project:
+      </p>
+      <h2>1. Database Schema</h2>
+      <pre>{`CREATE TABLE students (
   id SERIAL PRIMARY KEY,
-  username VARCHAR(50) UNIQUE NOT NULL,
-  email VARCHAR(100) UNIQUE NOT NULL
-);
+  name VARCHAR(100),
+  major VARCHAR(50),
+  gpa NUMERIC(3,2)
+);`}</pre>
 
-INSERT INTO users (username, email)
-VALUES ('Alice', 'alice@example.com');
+      <h2>2. Query Example</h2>
+      <pre>{`SELECT name, gpa FROM students WHERE gpa > 3.5;`}</pre>
 
-SELECT * FROM users;`}
-      </code></pre>
+      <p>These examples show basic SQL structure in our PostgreSQL system.</p>
     </div>
   );
 }
