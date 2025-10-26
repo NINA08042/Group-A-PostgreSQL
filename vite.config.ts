@@ -4,5 +4,5 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   base: "/Group-A-PostgreSQL/",
   plugins: [react()],
-  assetsInclude: ["**/*.md"]
+  assetsInclude: ["**/*.md", "**/*.mp4"]
 });
