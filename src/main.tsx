@@ -5,7 +5,7 @@ import App from "./App";
 import Presentation from "./pages/Presentation";
 import Tutorial from "./pages/Tutorial";
 import CodeExplanation from "./pages/CodeExplanation";
-import "./styles/global.css";
+import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

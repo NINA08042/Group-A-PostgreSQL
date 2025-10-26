@@ -8,19 +8,15 @@ export default function Presentation() {
 
   useEffect(() => {
     fetch("/Group-A-PostgreSQL/assets/postgresql-presentation.md")
-      .then(r => r.text())
-      .then(setContent)
-      .catch(() => setContent("# Failed to load presentation"));
+      .then((res) => res.text())
+      .then(setContent);
   }, []);
 
   return (
-    <div className="page">
-      <h1>📊 PostgreSQL Presentation</h1>
-      <article className="prose">
-        <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
-          {content}
-        </ReactMarkdown>
-      </article>
+    <div className="prose">
+      <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
+        {content}
+      </ReactMarkdown>
     </div>
   );
 }
