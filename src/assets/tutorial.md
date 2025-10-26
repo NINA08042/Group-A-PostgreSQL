@@ -1,33 +1,26 @@
-# PostgreSQL + DBeaver Setup Guide
-
-## Step 1 – Download PostgreSQL
-![Open PostgreSQL official website](../public/images/step1.png)
-
-Go to [https://www.postgresql.org/download](https://www.postgresql.org/download)  
-Choose your operating system and download the latest version.
-
+---
+title: "PostgreSQL Tutorial"
+layout: post
+author: Group A
+date: 2025-10-21
 ---
 
-## Step 2 – Install PostgreSQL
-![Installation wizard](../public/images/step2.png)
-Follow the wizard. Default options are fine for most users.
+# PostgreSQL Installation & DBeaver Setup
 
----
+## Step 1 — Download PostgreSQL
+![Step 1](/Group-A-PostgreSQL/images/tutorial-step1.png)
 
-## Step 3 – Download DBeaver
-![DBeaver download page](../public/images/step3.png)
-Visit [https://dbeaver.io/download/](https://dbeaver.io/download/)  
-and choose **DBeaver Community Edition**.
+## Step 2 — Install PostgreSQL
+![Step 2](/Group-A-PostgreSQL/images/tutorial-step2.png)
 
----
+## Step 3 — Verify Installation
+![Step 3](/Group-A-PostgreSQL/images/tutorial-step3.png)
 
-## Step 4 – Connect PostgreSQL in DBeaver
-![Create connection window](../public/images/step4.png)
-Open DBeaver → “New Connection” → Select “PostgreSQL”  
-Enter your database details and click **Finish**.
+## Step 4 — Install DBeaver
+![Step 4](/Group-A-PostgreSQL/images/tutorial-step4.png)
 
----
+## Step 5 — Connect DBeaver to PostgreSQL
+![Step 5](/Group-A-PostgreSQL/images/tutorial-step5.png)
 
-## Step 5 – Explore Your Database
-![Database overview](../public/images/step5.png)
-Now you can browse schemas, tables, and run queries.
+## Step 6 — Create Your First Table (Video)
+<video src="/Group-A-PostgreSQL/videos/tutorial-create-table.mp4" controls></video>
