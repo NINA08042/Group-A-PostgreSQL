@@ -12,12 +12,15 @@ author: >
 Frist, we need install **DBeaver**.
 
 https://dbeaver.io/download/
+<br>
 
 ***Step1***
 
 ![Step 1](/Group-A-PostgreSQL/images/tutorial-step1.png)
 
 Take ***Windows*** as an example.
+<br>
+
 
 ***Step2***
 
@@ -29,6 +32,9 @@ There’s nothing to configure here — just click **Next** to start the setup p
 
 Think of it as the **starting point** of the installation wizard.
 
+<br>
+
+
 ***Step3***
 
 ![Step 1](/Group-A-PostgreSQL/images/tutorial-step3.png)
@@ -38,6 +44,8 @@ Here you’ll see the **Apache License 2.0** agreement.
 You must click **I Agree** to continue the installation.  
 
 If you don’t accept the license, the setup will stop right here — so just read it quickly and agree to proceed.
+<br>
+
 
 ***Step4***
 
@@ -49,6 +57,8 @@ Now you decide **who will have access** to DBeaver on this computer:
   
 - **For me (current user)** – installs only for your own account (the most common choice).  
 Select the option you prefer, then hit **Next**.
+<br>
+
 
 ***Step5***
 
@@ -65,6 +75,8 @@ Here you choose which parts of DBeaver to install:
 - **Associate SQL files** / **Associate SQLite database files** – lets Windows open those file types directly in DBeaver.
   
 Once you’ve made your selections, click **Next**.
+<br>
+
 
 ***Step6***
 
@@ -75,6 +87,8 @@ Here you pick the **installation directory**.
 You can click **Browse…** to change the path.  
 
 Make sure the drive has **enough free space**, then press **Next**.
+<br>
+
 
 ***Step7***
 
@@ -85,6 +99,8 @@ Choose the **Start Menu folder name** where shortcuts will appear — usually **
 If you don’t want shortcuts at all, check **Do not create shortcuts**.  
 
 When you’re ready, click **Install** to begin copying files.
+<br>
+
 
 ***Step8***
 
@@ -95,6 +111,8 @@ At first launch (or at the end of setup), you’ll see a window asking for your 
 Pick a language from the dropdown (for example, **English**) and click **OK**. 
 
 This only affects the **user interface text**, not your database connections or data.
+<br>
+
 
 ## Tips
 
@@ -105,6 +123,8 @@ This only affects the **user interface text**, not your database connections or 
 - On the first run after installation, DBeaver might ask to create a **workspace** — just accept the default.
   
 You can later add **database connections**, install drivers, and start exploring data right away.
+
+<br>
 
 ***Summary:***  
 
@@ -119,6 +139,8 @@ Also, we need install **PostgreSQL** to be connected with DBeaver.
 
 https://www.postgresql.org/download/
 
+<br>
+
 ***Step1- Select Your Operating System***
 
 ![Step 2](/Group-A-PostgreSQL/images/tutorial-step9.png)
@@ -128,6 +150,8 @@ This is the **official PostgreSQL Downloads** page.
 In the **Packages and Installers** section, choose your system: **Windows**, **macOS**, or **Linux** (the image highlights Windows and macOS).  
 
 Click **Windows** to open the **Windows installer** page.
+<br>
+
 
 
 ***Step2- Windows Installer Page***
@@ -139,6 +163,8 @@ Click **Windows** to open the **Windows installer** page.
 It recommends using the **Interactive Installer by EDB**, which includes the **PostgreSQL Server**, **pgAdmin 4**, and **Stack Builder**.  
 
 Click **Download the Installer** to continue.
+<br>
+
 
 
 ***Step3- Choose Version and Download***
@@ -150,6 +176,8 @@ This is EDB’s **Download PostgreSQL** page.
 On the left, select the **PostgreSQL version** you want (for example **18.0**); on the right, choose the correct platform.  
 
 Click the **Windows x86-64** download link for your version to get the installer.
+<br>
+
 
 
 ***Step4- Setup Welcome Screen***
@@ -159,6 +187,8 @@ Click the **Windows x86-64** download link for your version to get the installer
 When you open the installer, this **Setup – PostgreSQL** window appears.  
 
 Nothing to change here — just click **Next** to start the installation wizard.
+<br>
+
 
 
 ***Step5- Choose Installation Directory***
@@ -173,6 +203,8 @@ The default is usually
 You can click **Browse...** to change it, but the default works for most users.  
 
 Click **Next** to continue.
+<br>
+
 
 ***Step6- Select Components***
 
@@ -188,7 +220,9 @@ Here you pick which **components** to install:
   
 - **Command Line Tools** – includes `psql` and utilities
   
-Leave everything checked and click **Next**
+Leave everything checked and click **Next**.
+<br>
+
 
 
 ***Step7- Select Data Directory***
@@ -202,6 +236,7 @@ The default location is a sub-folder named **`data`** inside the installation pa
 Keep the default unless you want to use another drive, then click **Next**.  
 
 In professional setups, the data directory is often stored on a separate disk for better performance and easier backups.
+<br>
 
 
 ***Step8- Set Superuser Password***
@@ -215,6 +250,7 @@ You’ll need this password to connect as the administrator.
 Enter a **strong password** twice and click **Next**. 
 
 Don’t forget it — you’ll need it every time you manage the database.
+<br>
 
 
 ***Step9- Specify Port Number***
@@ -228,6 +264,7 @@ The default is **5432**, which is the standard port.
 Keep **5432** unless it’s already in use; if so, choose another like **5433** or **5434**, then click **Next**.  
 
 Remember this number for later connections.
+<br>
 
 
 ***Step10- Select Locale***
@@ -239,6 +276,7 @@ Choose the **locale** (language and regional settings) for your database cluster
 It affects text sorting and character handling.  
 
 Use **DEFAULT** (your system locale) in most cases, then click **Next**.
+<br>
 
 
 ***Step11- Pre-Installation Summary***
@@ -248,6 +286,7 @@ Use **DEFAULT** (your system locale) in most cases, then click **Next**.
 This page summarizes all your settings — installation path, data directory, port, locale, and components.  
 
 Review everything carefully, then click **Next** to proceed, or **Back** to change anything.
+<br>
 
 
 ***Step12- Ready to Install***
@@ -257,6 +296,7 @@ Review everything carefully, then click **Next** to proceed, or **Back** to chan
 A confirmation screen appears showing that **PostgreSQL is ready to install**. 
 
 Click **Next** to begin copying files and configuring the database service.
+<br>
 
 
 ***Step13- Installation Progress***
@@ -268,6 +308,8 @@ PostgreSQL is now being installed.
 You’ll see a **progress bar** showing files being copied and configured.  
 
 Wait until it completes — once done, you’ll see the **Finish** screen, where you can launch **Stack Builder** or simply close the wizard.
+<br>
+
 
 ## Extra Tips
 
@@ -278,6 +320,8 @@ Wait until it completes — once done, you’ll see the **Finish** screen, where
 - After installation, open **pgAdmin 4**, log in with your password, and check that the **postgres** database is visible and working.
   
 - You can reopen **Stack Builder** anytime to install optional packages like **PostGIS** or **database drivers**.
+<br>
+
 
 ***Summary:***  
 
