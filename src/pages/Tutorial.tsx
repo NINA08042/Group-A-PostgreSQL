@@ -1,24 +1,55 @@
+import React, { useEffect, useState } from "react";
+import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
+import remarkGfm from "remark-gfm";
+
 export default function Tutorial() {
+  const [content, setContent] = useState("");
+
+  useEffect(() => {
+    const mdPath = `${import.meta.env.BASE_URL}src/assets/tutorial.md`;
+
+    fetch(mdPath)
+      .then((res) => res.text())
+      .then(setContent)
+      .catch(() => setContent("# Failed to load tutorial 😢"));
+  }, []);
+
   return (
-    <div className="page">
-      <h1>PostgreSQL + DBeaver Setup Guide</h1>
-
-      <h2>1️⃣ Install PostgreSQL</h2>
-      <p>Download PostgreSQL from <a href="https://www.postgresql.org/download/" target="_blank">postgresql.org</a>.</p>
-
-      <h2>2️⃣ Install DBeaver</h2>
-      <p>Get DBeaver (GUI client) from <a href="https://dbeaver.io/download/" target="_blank">dbeaver.io</a>.</p>
-
-      <h2>3️⃣ Connect DBeaver to PostgreSQL</h2>
-      <ol>
-        <li>Open DBeaver → Database → New Connection → PostgreSQL</li>
-        <li>Enter Host, Port (5432), Username, Password</li>
-        <li>Click <b>Test Connection</b> → <b>Finish</b></li>
-      </ol>
-
-      <h2>4️⃣ Verify Connection</h2>
-      <p>Right-click on your database → “SQL Editor” → Run a query like:</p>
-      <pre><code className="language-sql">SELECT version();</code></pre>
+    <div className="page markdown-body">
+      <h1>🧩 PostgreSQL + DBeaver Setup Tutorial</h1>
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+        rehypePlugins={[rehypeRaw]}
+        components={{
+          img: ({ node, ...props }) => (
+            <figure style={{ textAlign: "center", margin: "30px 0" }}>
+              <img
+                {...props}
+                style={{
+                  maxWidth: "90%",
+                  borderRadius: "12px",
+                  boxShadow: "0 6px 20px rgba(0,0,0,0.1)"
+                }}
+              />
+              {props.alt && (
+                <figcaption
+                  style={{
+                    fontSize: "0.95rem",
+                    color: "#555",
+                    marginTop: "8px",
+                    fontStyle: "italic"
+                  }}
+                >
+                  {props.alt}
+                </figcaption>
+              )}
+            </figure>
+          )
+        }}
+      >
+        {content}
+      </ReactMarkdown>
     </div>
   );
 }
