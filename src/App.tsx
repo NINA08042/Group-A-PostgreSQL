@@ -1,15 +1,25 @@
-import { Link } from "react-router-dom";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Presentation from "./pages/Presentation";
+import Tutorial from "./pages/Tutorial";
+import CodeExplanation from "./pages/CodeExplanation";
 
-export default function App() {
+function App() {
   return (
-    <div style={{ textAlign: "center", padding: "100px" }}>
-      <h1>Group A - PostgreSQL Project</h1>
-      <p>Welcome! Choose a page below to explore.</p>
-      <div style={{ marginTop: "30px" }}>
-        <Link to="/presentation" style={{ margin: "0 20px" }}>Presentation</Link>
-        <Link to="/tutorial" style={{ margin: "0 20px" }}>Tutorial</Link>
-        <Link to="/code" style={{ margin: "0 20px" }}>Code Explanation</Link>
-      </div>
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/presentation" element={<Presentation />} />
+        <Route path="/tutorial" element={<Tutorial />} />
+        <Route path="/code" element={<CodeExplanation />} />
+      </Routes>
+      <Footer />
+    </>
   );
 }
+
+export default App;
