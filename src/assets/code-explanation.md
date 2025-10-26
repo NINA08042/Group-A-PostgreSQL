@@ -143,7 +143,7 @@ It may use ***geographic data types*** (like **`geometry`** or **`geography`**) 
 It’s a comprehensive example that combines ***indexing***, ***functions***, and ***real-world business logic*** into one ***enterprise-level design***.
 
 
-#Summary
+# Summary
 
 These scripts take you on a complete journey — from ***basic SQL syntax*** to ***indexing and optimization***, and finally to ***complete business database systems***.  
 Early scripts teach the ***fundamentals***, while later ones show how those skills come together in ***real-world PostgreSQL applications***.
