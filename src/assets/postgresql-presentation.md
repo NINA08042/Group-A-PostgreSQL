@@ -23,12 +23,11 @@ Welcome to our presentation on PostgreSQL — an open-source, robust, and high-p
 
 ![Slide 1](images/slide1.png)
 
-PostgreSQL
-Open source
-Robust
-High Performance
-Jianing Xue    B01812701		Xinrui Gao B01819974
-Weixue Kong  B01819838		Fang Tang B01814427
+PostgreSQL  
+Open source  
+Robust  
+High Performance  
+Jianing Xue B01812701 | Xinrui Gao B01819974 | Weixue Kong B01819838 | Fang Tang B01814427
 
 ## Slide 2
 
@@ -40,259 +39,223 @@ CONTENTS
 
 ![Slide 3](images/slide3.png)
 
-PART 01
+PART 01  
 What is a Database?
 
 ## Slide 4
 
 ![Slide 4](images/slide4.png)
 
-Managed by a database management system, which ensures data integrity, security, and efficient organization of information.
- Relational Database： structured in tabular form.
+Managed by a database management system, which ensures data integrity, security, and efficient organization of information.  
+Relational Database： structured in tabular form.
 
 ## Slide 5
 
 ![Slide 5](images/slide5.png)
 
-Data Management
-DEITEL, H.M. and DEITEL, B. (1986) ‘Database Management Systems, Management Information Systems, Decision Support Systems’, in An Introduction to Information Processing. Academic Press, pp. 272–305. Available at: https://doi.org/10.1016/B978-0-12-209005-9.50018-7.
+Data Management  
+DEITEL, H.M. and DEITEL, B. (1986) ‘Database Management Systems, Management Information Systems, Decision Support Systems’, in *An Introduction to Information Processing*. Academic Press.
 
 ## Slide 6
 
 ![Slide 6](images/slide6.png)
 
-Types of Databases
-Relational Database:
- organizes data into rows and columns
-NoSQL Database: non-relational database
-Graph Databases
-eg.json, bson, XMLdocument
+Types of Databases  
+Relational Database: organizes data into rows and columns  
+NoSQL Database: non-relational database  
+Graph Databases  
+e.g. JSON, BSON, XML
 
 ## Slide 7
 
 ![Slide 7](images/slide7.png)
 
-PART 02
-Relational Database: Postgresql
+PART 02  
+Relational Database: PostgreSQL
 
 ## Slide 8
 
 ![Slide 8](images/slide8.png)
 
-Rows
-(Tuples)
-Primary Key
-Columns
-(Attributes)
-Organizes data in  collection of two-dimensional inter-related tables (relations)
-
-Row (tuple) : an entity/record
-
-Column (Attribute): a specific property of the entity
+Rows (Tuples)  
+Primary Key  
+Columns (Attributes)  
+Organizes data in two-dimensional interrelated tables (relations)
 
 ## Slide 9
 
 ![Slide 9](images/slide9.png)
 
-A set of rules used in DBMS: make sure the data is accurate, consistent and reliable
-MUST be true for all instance.
-Domain Constraints: 
-Attribute values are valid and within a specific domain.
-Data type: string
-NOT NULL
+A set of rules used in DBMS: make sure the data is accurate, consistent, and reliable.  
+Domain Constraints: ensure attribute values are valid and within a specific domain.  
+Example: `NOT NULL`, specific data types.
 
 ## Slide 10
 
 ![Slide 10](images/slide10.png)
 
-A set of rules used in DBMS: make sure the data is accurate, consistant and reliable
-MUST be true for all instance.
-Domain Constraints: 
-Entity Integrity Constraints:
-Primary key is cannot be null or repeated.
-non-NULL
-Unique
-table specific
+Entity Integrity Constraints:  
+Primary key cannot be null or duplicated.  
+Ensures each record is unique within its table.
 
 ## Slide 11
 
 ![Slide 11](images/slide11.png)
 
-A set of rules used in DBMS: make sure the data is accurate, consistant and reliable
-MUST be true for all instance.
-Domain Constraints: 
-Entity Integrity Constraints:
-Referential Integrity Constraint：
-Rationships between tables remain consistent.
-Foreign key:
- match a value in the referenced primary key of another table
-or NULL
+Referential Integrity Constraint：  
+Ensures relationships between tables remain consistent.  
+Foreign key values must match primary keys in the referenced table or be NULL.
 
 ## Slide 12
 
 ![Slide 12](images/slide12.png)
 
-Atomicity
-All changes to data are performed as if they are a single operation.
-Consistency
-Isolation
-Durability
-Data remains in a consistent state from start to finish, reinforcing data integrity.
-The intermediate state of a transaction is not visible to other transactions
-Changes to data persist and are not undone, after successful transaction.
+ACID Properties  
+Atomicity, Consistency, Isolation, Durability  
+Guarantees reliable transactions in PostgreSQL.
 
 ## Slide 13
 
 ![Slide 13](images/slide13.png)
 
-Transactions & Concurrency Control
-one logical unit of work.
-Transaction: 
-A logical unit of work that groups one or more database operations into a single, atomic action.
-Concurrency Control:
-Mechanisms that allow multiple transactions to execute simultaneously without interfering with each other, preserving consistency.
-Follows the ACID properties
+Transactions & Concurrency Control  
+PostgreSQL ensures multiple transactions can run simultaneously without interfering.  
+It uses the **ACID** principles.
 
 ## Slide 14
 
 ![Slide 14](images/slide14.png)
 
-Transactions & Concurrency Control
-one logical unit of work.
-PostgreSQL Implementation:
-
-Uses MVCC (Multi-Version Concurrency Control).
-Each transaction sees a snapshot of the database at a specific point in time.
-Readers don’t block writers, and writers don’t block readers.
-Ensures high concurrency with consistent results
+PostgreSQL Implementation  
+Uses **MVCC (Multi-Version Concurrency Control)**  
+Readers don’t block writers, writers don’t block readers.
 
 ## Slide 15
 
 ![Slide 15](images/slide15.png)
 
-PART 03
-Why Postgresql
+PART 03  
+Why PostgreSQL
 
 ## Slide 16
 
 ![Slide 16](images/slide16.png)
 
-PostgreSQL: PROS AND CONS
-Free and Open Source
-Free and Open Source
-Completely free to use with a liberal license.
-Feature-Rich
-Supports advanced SQL, ACID transactions, JSON, indexing, and extensions.
-Enterprise-Grade
-Widely used in production environments; reliable and robust.
-Active Community
-Strong open-source community with extensive documentation and resources.
-Free and Open Source
-Complex Configuration
-Requires tuning and deeper technical knowledge
-Higher Learning Curve
-More complex than lightweight databases like MySQL.
-Write Performance
-Slower in high-frequency write workloads compared to NoSQL systems.
-Limited GUI Tools
-Administration tools are less user-friendly than some commercial systems.
+PostgreSQL: PROS AND CONS  
+✅ Free and Open Source  
+✅ Feature-Rich  
+✅ Enterprise-Grade  
+✅ Active Community  
+⚠️ Complex configuration and higher learning curve
 
 ## Slide 17
 
 ![Slide 17](images/slide17.png)
 
-How to use Postgresql:Environment Setup
-one logical unit of work.
-Tools:
-DBeaver (GUI): 
-https://dbeaver.io/download/
-PostgreSQL 17/18 (Core DBMS)
-https://www.postgresql.org/download/
+How to use PostgreSQL: Environment Setup  
+Tools:  
+- DBeaver (GUI): https://dbeaver.io/download/  
+- PostgreSQL 17/18: https://www.postgresql.org/download/
 
-## Slide 18
+---
 
-![Slide 18](images/slide18.png)
+## Slide 18 (Video)
 
-How to use Postgresql:Environment Setup
-one logical unit of work.
-Tools:
-DBeaver (GUI): 
-https://dbeaver.io/download/
-PostgreSQL 17/18 (Core DBMS)
-https://www.postgresql.org/download/
+<video src="../public/videos/slide18.mp4" controls></video>
+
+**Topic:** Environment Setup Demo  
+This video demonstrates how to install PostgreSQL and DBeaver,  
+configure the connection, and test the environment successfully.
+
+---
 
 ## Slide 19
 
 ![Slide 19](images/slide19.png)
 
-PART 04
-Simple guide to PostgreSQL
+PART 04  
+Simple Guide to PostgreSQL
 
-## Slide 20
+---
 
-![Slide 20](images/slide20.png)
+## Slide 20 (Video)
 
-Hands-on Practice: Table Management
+<video src="../public/videos/slide20.mp4" controls></video>
 
-## Slide 21
+**Topic:** Table Management  
+In this demo, we create and manage PostgreSQL tables using DBeaver,  
+showing how to define columns, primary keys, and relationships.
 
-![Slide 21](images/slide21.png)
+---
 
-Hands-on Practice: CRUD operations
+## Slide 21 (Video)
 
-## Slide 22
+<video src="../public/videos/slide21.mp4" controls></video>
 
-![Slide 22](images/slide22.png)
+**Topic:** CRUD Operations  
+This video demonstrates how to perform Create, Read, Update, and Delete operations using SQL commands and the DBeaver GUI.
 
-Hands-on Practice: Database Management
+---
 
-## Slide 23
+## Slide 22 (Video)
 
-![Slide 23](images/slide23.png)
+<video src="../public/videos/slide22.mp4" controls></video>
 
-Advanced Practice: Transaction management and concurrency control
+**Topic:** Database Management  
+Learn how to modify schemas, manage users, and optimize storage with PostgreSQL tools.
 
-## Slide 24
+---
 
-![Slide 24](images/slide24.png)
+## Slide 23 (Video)
 
-Advanced Practice: MVCC
+<video src="../public/videos/slide23.mp4" controls></video>
 
-## Slide 25
+**Topic:** Transaction Management & Concurrency  
+This segment shows how PostgreSQL handles concurrent transactions while maintaining ACID compliance.
 
-![Slide 25](images/slide25.png)
+---
 
-Advanced Practice: Partitioned Table
+## Slide 24 (Video)
 
-## Slide 26
+<video src="../public/videos/slide24.mp4" controls></video>
 
-![Slide 26](images/slide26.png)
+**Topic:** MVCC Demonstration  
+PostgreSQL’s Multi-Version Concurrency Control is shown in action, explaining how reads and writes remain isolated.
 
-python connection of progresql
+---
+
+## Slide 25 (Video)
+
+<video src="../public/videos/slide25.mp4" controls></video>
+
+**Topic:** Partitioned Tables  
+This video explains how partitioning works in PostgreSQL for large datasets to enhance query performance.
+
+---
+
+## Slide 26 (Video)
+
+<video src="../public/videos/slide26.mp4" controls></video>
+
+**Topic:** Python Connection  
+Demonstrates how to connect to PostgreSQL using Python (`psycopg2`) and perform database queries programmatically.
+
+---
 
 ## Slide 27
 
 ![Slide 27](images/slide27.png)
 
-SUMMARY
-COMPANY POWERPOINT
-DBMS
-PostgreSQL
-PostgreSQL
-Efficient
- Managed data
-Free and Open Source
-Feature-Rich
-Enterprise-Grade
-Active Community
-Practice & exploration lead to mastery.
+**SUMMARY**  
+- PostgreSQL is free, feature-rich, and enterprise-grade.  
+- Ensures high reliability and performance.  
+- Practice and exploration lead to mastery!
+
+---
 
 ## Slide 28
 
 ![Slide 28](images/slide28.png)
 
-THANKS
+**THANK YOU** 🙏  
 Any questions?
-
----
-
