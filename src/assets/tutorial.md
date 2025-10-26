@@ -13,13 +13,13 @@ Frist, we need install **DBeaver**.
 
 https://dbeaver.io/download/
 
-**Step1**
+***Step1***
 
 ![Step 1](/Group-A-PostgreSQL/images/tutorial-step1.png)
 
 Take ***Windows*** as an example.
 
-**Step2**
+***Step2***
 
 ![Step 1](/Group-A-PostgreSQL/images/tutorial-step2.png)
 
@@ -29,7 +29,7 @@ There’s nothing to configure here — just click **Next** to start the setup p
 
 Think of it as the **starting point** of the installation wizard.
 
-**Step3**
+***Step3***
 
 ![Step 1](/Group-A-PostgreSQL/images/tutorial-step3.png)
 
@@ -39,7 +39,7 @@ You must click **I Agree** to continue the installation.
 
 If you don’t accept the license, the setup will stop right here — so just read it quickly and agree to proceed.
 
-**Step4**
+***Step4***
 
 ![Step 1](/Group-A-PostgreSQL/images/tutorial-step4.png)
 
@@ -50,7 +50,7 @@ Now you decide **who will have access** to DBeaver on this computer:
 - **For me (current user)** – installs only for your own account (the most common choice).  
 Select the option you prefer, then hit **Next**.
 
-**Step5**
+***Step5***
 
 ![Step 1](/Group-A-PostgreSQL/images/tutorial-step5.png)
 
@@ -66,7 +66,7 @@ Here you choose which parts of DBeaver to install:
   
 Once you’ve made your selections, click **Next**.
 
-**Step6**
+***Step6***
 
 ![Step 1](/Group-A-PostgreSQL/images/tutorial-step6.png)
 
@@ -76,7 +76,7 @@ You can click **Browse…** to change the path.
 
 Make sure the drive has **enough free space**, then press **Next**.
 
-**Step7**
+***Step7***
 
 ![Step 1](/Group-A-PostgreSQL/images/tutorial-step7.png)
 
@@ -86,7 +86,7 @@ If you don’t want shortcuts at all, check **Do not create shortcuts**.
 
 When you’re ready, click **Install** to begin copying files.
 
-**Step8**
+***Step8***
 
 ![Step 1](/Group-A-PostgreSQL/images/tutorial-step8.png)
 
@@ -106,7 +106,7 @@ This only affects the **user interface text**, not your database connections or 
   
 You can later add **database connections**, install drivers, and start exploring data right away.
 
-**Summary:**  
+***Summary:***  
 
 This eight-step setup takes you from the **installer launch** to a fully working **DBeaver environment**.  
 
@@ -119,7 +119,7 @@ Also, we need install **PostgreSQL** to be connected with DBeaver.
 
 https://www.postgresql.org/download/
 
-**Step1- Select Your Operating System**
+***Step1- Select Your Operating System***
 
 ![Step 2](/Group-A-PostgreSQL/images/tutorial-step9.png)
 
@@ -130,7 +130,7 @@ In the **Packages and Installers** section, choose your system: **Windows**, **m
 Click **Windows** to open the **Windows installer** page.
 
 
-**Step2- Windows Installer Page**
+***Step2- Windows Installer Page***
 
 ![Step 2](/Group-A-PostgreSQL/images/tutorial-step10.png)
 
@@ -141,7 +141,7 @@ It recommends using the **Interactive Installer by EDB**, which includes the **P
 Click **Download the Installer** to continue.
 
 
-**Step3- Choose Version and Download**
+***Step3- Choose Version and Download***
 
 ![Step 2](/Group-A-PostgreSQL/images/tutorial-step11.png)
 
@@ -152,7 +152,7 @@ On the left, select the **PostgreSQL version** you want (for example **18.0**); 
 Click the **Windows x86-64** download link for your version to get the installer.
 
 
-**Step4- Setup Welcome Screen**
+***Step4- Setup Welcome Screen***
 
 ![Step 2](/Group-A-PostgreSQL/images/tutorial-step12.png)
 
@@ -161,7 +161,7 @@ When you open the installer, this **Setup – PostgreSQL** window appears.
 Nothing to change here — just click **Next** to start the installation wizard.
 
 
-**Step5- Choose Installation Directory**
+***Step5- Choose Installation Directory***
 
 ![Step 2](/Group-A-PostgreSQL/images/tutorial-step13.png)
 
@@ -174,7 +174,7 @@ You can click **Browse...** to change it, but the default works for most users.
 
 Click **Next** to continue.
 
-**Step6- Select Components**
+***Step6- Select Components***
 
 ![Step 2](/Group-A-PostgreSQL/images/tutorial-step14.png)
 
@@ -191,7 +191,7 @@ Here you pick which **components** to install:
 Leave everything checked and click **Next**
 
 
-**Step7- Select Data Directory**
+***Step7- Select Data Directory***
 
 ![Step 2](/Group-A-PostgreSQL/images/tutorial-step15.png)
 
@@ -204,7 +204,7 @@ Keep the default unless you want to use another drive, then click **Next**.
 In professional setups, the data directory is often stored on a separate disk for better performance and easier backups.
 
 
-**Step8- Set Superuser Password**
+***Step8- Set Superuser Password***
 
 ![Step 2](/Group-A-PostgreSQL/images/tutorial-step16.png)
 
@@ -217,7 +217,7 @@ Enter a **strong password** twice and click **Next**.
 Don’t forget it — you’ll need it every time you manage the database.
 
 
-**Step9- Specify Port Number**
+***Step9- Specify Port Number***
 
 ![Step 2](/Group-A-PostgreSQL/images/tutorial-step17.png)
 
@@ -230,7 +230,7 @@ Keep **5432** unless it’s already in use; if so, choose another like **5433** 
 Remember this number for later connections.
 
 
-**Step10- Select Locale**
+***Step10- Select Locale***
 
 ![Step 2](/Group-A-PostgreSQL/images/tutorial-step18.png)
 
@@ -241,7 +241,7 @@ It affects text sorting and character handling.
 Use **DEFAULT** (your system locale) in most cases, then click **Next**.
 
 
-**Step11- Pre-Installation Summary**
+***Step11- Pre-Installation Summary***
 
 ![Step 2](/Group-A-PostgreSQL/images/tutorial-step19.png)
 
@@ -250,7 +250,7 @@ This page summarizes all your settings — installation path, data directory, po
 Review everything carefully, then click **Next** to proceed, or **Back** to change anything.
 
 
-**Step12- Ready to Install**
+***Step12- Ready to Install***
 
 ![Step 2](/Group-A-PostgreSQL/images/tutorial-step20.png)
 
@@ -259,7 +259,7 @@ A confirmation screen appears showing that **PostgreSQL is ready to install**.
 Click **Next** to begin copying files and configuring the database service.
 
 
-**Step13- Installation Progress**
+***Step13- Installation Progress***
 
 ![Step 2](/Group-A-PostgreSQL/images/tutorial-step21.png)
 
@@ -279,7 +279,7 @@ Wait until it completes — once done, you’ll see the **Finish** screen, where
   
 - You can reopen **Stack Builder** anytime to install optional packages like **PostGIS** or **database drivers**.
 
-**Summary:**  
+***Summary:***  
 
 These steps take you from the download page all the way to a fully functional **PostgreSQL setup**.  
 
