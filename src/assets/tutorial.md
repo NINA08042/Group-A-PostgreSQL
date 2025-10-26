@@ -7,12 +7,16 @@ author: >
 
 # PostgreSQL Installation & DBeaver Setup
 
-## Step 1 — Download DBeaver
+## Download DBeaver
+
 Frist, we need install **DBeaver**.
+
+**Step1**
 ![Step 1](/Group-A-PostgreSQL/images/tutorial-step1.png)
 
 Take ***Windows*** as an example.
 
+**Step2**
 ![Step 1](/Group-A-PostgreSQL/images/tutorial-step2.png)
 
 This is the **welcome page** of the DBeaver installer.  
@@ -21,6 +25,7 @@ There’s nothing to configure here — just click **Next** to start the setup p
 
 Think of it as the **starting point** of the installation wizard.
 
+**Step3**
 ![Step 1](/Group-A-PostgreSQL/images/tutorial-step3.png)
 
 Here you’ll see the **Apache License 2.0** agreement.  
@@ -29,6 +34,7 @@ You must click **I Agree** to continue the installation.
 
 If you don’t accept the license, the setup will stop right here — so just read it quickly and agree to proceed.
 
+**Step4**
 ![Step 1](/Group-A-PostgreSQL/images/tutorial-step4.png)
 
 Now you decide **who will have access** to DBeaver on this computer:  
@@ -38,6 +44,7 @@ Now you decide **who will have access** to DBeaver on this computer:
 - **For me (current user)** – installs only for your own account (the most common choice).  
 Select the option you prefer, then hit **Next**.
 
+**Step5**
 ![Step 1](/Group-A-PostgreSQL/images/tutorial-step5.png)
 
 Here you choose which parts of DBeaver to install:  
@@ -52,6 +59,7 @@ Here you choose which parts of DBeaver to install:
   
 Once you’ve made your selections, click **Next**.
 
+**Step6**
 ![Step 1](/Group-A-PostgreSQL/images/tutorial-step6.png)
 
 Here you pick the **installation directory**.  
@@ -62,6 +70,7 @@ You can click **Browse…** to change the path.
 
 Make sure the drive has **enough free space**, then press **Next**.
 
+**Step7**
 ![Step 1](/Group-A-PostgreSQL/images/tutorial-step7.png)
 
 Choose the **Start Menu folder name** where shortcuts will appear — usually **DBeaver Community**.  
@@ -70,6 +79,7 @@ If you don’t want shortcuts at all, check **Do not create shortcuts**.
 
 When you’re ready, click **Install** to begin copying files.
 
+**Step8**
 ![Step 1](/Group-A-PostgreSQL/images/tutorial-step8.png)
 
 At first launch (or at the end of setup), you’ll see a window asking for your **language preference**.  
