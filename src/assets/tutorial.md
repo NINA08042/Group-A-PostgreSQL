@@ -346,14 +346,7 @@ These steps take you from the download page all the way to a fully functional **
 
 Once done, you’ll have a secure database ready to use in **pgAdmin** or any other SQL client.
 
-## Step 3 — Verify Installation
 
 
-## Step 4 — Install DBeaver
-
-
-## Step 5 — Connect DBeaver to PostgreSQL
-
-
-## Step 6 — Create Your First Table (Video)
+## Step 3 — connect 
 <video src="/Group-A-PostgreSQL/videos/tutorial-create-table.mp4" controls></video>
