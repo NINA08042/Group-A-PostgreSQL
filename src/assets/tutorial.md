@@ -348,6 +348,17 @@ Once done, you’ll have a secure database ready to use in **pgAdmin** or any ot
 
 
 
-## connect 
+## Environment Setup
+
 
 <video src="/Group-A-PostgreSQL/videos/slide18.mp4" controls></video>
+
+Click the “Database Navigator” tab on the left side of the screen.
+
+Right-click on the blank area and select “Create”.
+
+From the drop down menu, choose “Connection”.
+
+Click the PostgreSQL icon, enter the required connection information, and then click “Finish”.
+
+Now we can operate on postgresql using Dbeaver.
