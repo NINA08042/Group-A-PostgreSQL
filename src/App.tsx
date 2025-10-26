@@ -1,31 +1,21 @@
-import { Link } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
 export default function App() {
   return (
-    <div className="wrap">
-      <nav className="navbar">
-        <h1>Group A — PostgreSQL</h1>
-        <ul>
-          <li><Link to="/presentation">Presentation</Link></li>
-          <li><Link to="/tutorial">Tutorial</Link></li>
-          <li><Link to="/code">Code Explanation</Link></li>
-        </ul>
-      </nav>
-
-      <main className="home">
-        <h2>Welcome</h2>
-        <p>
-          This site showcases our PostgreSQL presentation, tutorial guide, and code explanation
-          with rich media (images & videos) rendered from Markdown files.
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-500">
+      <Navbar />
+      <div className="flex flex-col items-center justify-center h-screen">
+        <h1 className="text-5xl font-bold mb-8 mt-10">Group A - PostgreSQL</h1>
+        <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
+          Explore database concepts, tutorials, and code demonstrations
         </p>
-        <div className="quick-links">
-          <Link to="/presentation" className="btn">Go to Presentation</Link>
-          <Link to="/tutorial" className="btn">Open Tutorial</Link>
-          <Link to="/code" className="btn">View Code Explanation</Link>
-        </div>
-      </main>
-
-      <footer>© 2025 Group A</footer>
+        <a
+          href="/Group-A-PostgreSQL/presentation"
+          className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition-transform hover:scale-105"
+        >
+          Start Learning →
+        </a>
+      </div>
     </div>
   );
 }
