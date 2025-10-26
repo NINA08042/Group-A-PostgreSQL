@@ -21,7 +21,7 @@ Welcome to our presentation on PostgreSQL — an open-source, robust, and high-p
 
 ## Slide 1
 
-![Slide 1](images/slide1.png)
+![Slide 1](../public/images/slide1.png)
 
 PostgreSQL  
 Open source  
@@ -31,34 +31,34 @@ Jianing Xue B01812701 | Xinrui Gao B01819974 | Weixue Kong B01819838 | Fang Tang
 
 ## Slide 2
 
-![Slide 2](images/slide2.png)
+![Slide 2](../public/images/slide2.png)
 
 CONTENTS
 
 ## Slide 3
 
-![Slide 3](images/slide3.png)
+![Slide 3](../public/images/slide3.png)
 
 PART 01  
 What is a Database?
 
 ## Slide 4
 
-![Slide 4](images/slide4.png)
+![Slide 4](../public/images/slide4.png)
 
 Managed by a database management system, which ensures data integrity, security, and efficient organization of information.  
 Relational Database： structured in tabular form.
 
 ## Slide 5
 
-![Slide 5](images/slide5.png)
+![Slide 5](../public/images/slide5.png)
 
 Data Management  
 DEITEL, H.M. and DEITEL, B. (1986) ‘Database Management Systems, Management Information Systems, Decision Support Systems’, in *An Introduction to Information Processing*. Academic Press.
 
 ## Slide 6
 
-![Slide 6](images/slide6.png)
+![Slide 6](../public/images/slide6.png)
 
 Types of Databases  
 Relational Database: organizes data into rows and columns  
@@ -68,14 +68,14 @@ e.g. JSON, BSON, XML
 
 ## Slide 7
 
-![Slide 7](images/slide7.png)
+![Slide 7](../public/images/slide7.png)
 
 PART 02  
 Relational Database: PostgreSQL
 
 ## Slide 8
 
-![Slide 8](images/slide8.png)
+![Slide 8](../public/images/slide8.png)
 
 Rows (Tuples)  
 Primary Key  
@@ -84,7 +84,7 @@ Organizes data in two-dimensional interrelated tables (relations)
 
 ## Slide 9
 
-![Slide 9](images/slide9.png)
+![Slide 9](../public/images/slide9.png)
 
 A set of rules used in DBMS: make sure the data is accurate, consistent, and reliable.  
 Domain Constraints: ensure attribute values are valid and within a specific domain.  
@@ -92,7 +92,7 @@ Example: `NOT NULL`, specific data types.
 
 ## Slide 10
 
-![Slide 10](images/slide10.png)
+![Slide 10](../public/images/slide10.png)
 
 Entity Integrity Constraints:  
 Primary key cannot be null or duplicated.  
@@ -100,7 +100,7 @@ Ensures each record is unique within its table.
 
 ## Slide 11
 
-![Slide 11](images/slide11.png)
+![Slide 11](../public/images/slide11.png)
 
 Referential Integrity Constraint：  
 Ensures relationships between tables remain consistent.  
@@ -108,7 +108,7 @@ Foreign key values must match primary keys in the referenced table or be NULL.
 
 ## Slide 12
 
-![Slide 12](images/slide12.png)
+![Slide 12](../public/images/slide12.png)
 
 ACID Properties  
 Atomicity, Consistency, Isolation, Durability  
@@ -116,7 +116,7 @@ Guarantees reliable transactions in PostgreSQL.
 
 ## Slide 13
 
-![Slide 13](images/slide13.png)
+![Slide 13](../public/images/slide13.png)
 
 Transactions & Concurrency Control  
 PostgreSQL ensures multiple transactions can run simultaneously without interfering.  
@@ -124,7 +124,7 @@ It uses the **ACID** principles.
 
 ## Slide 14
 
-![Slide 14](images/slide14.png)
+![Slide 14](../public/images/slide14.png)
 
 PostgreSQL Implementation  
 Uses **MVCC (Multi-Version Concurrency Control)**  
@@ -132,14 +132,14 @@ Readers don’t block writers, writers don’t block readers.
 
 ## Slide 15
 
-![Slide 15](images/slide15.png)
+![Slide 15](../public/images/slide15.png)
 
 PART 03  
 Why PostgreSQL
 
 ## Slide 16
 
-![Slide 16](images/slide16.png)
+![Slide 16](../public/images/slide16.png)
 
 PostgreSQL: PROS AND CONS  
 ✅ Free and Open Source  
@@ -150,7 +150,7 @@ PostgreSQL: PROS AND CONS
 
 ## Slide 17
 
-![Slide 17](images/slide17.png)
+![Slide 17](../public/images/slide17.png)
 
 How to use PostgreSQL: Environment Setup  
 Tools:  
@@ -171,7 +171,7 @@ configure the connection, and test the environment successfully.
 
 ## Slide 19
 
-![Slide 19](images/slide19.png)
+![Slide 19](../public/images/slide19.png)
 
 PART 04  
 Simple Guide to PostgreSQL
@@ -244,7 +244,7 @@ Demonstrates how to connect to PostgreSQL using Python (`psycopg2`) and perform 
 
 ## Slide 27
 
-![Slide 27](images/slide27.png)
+![Slide 27](../public/images/slide27.png)
 
 **SUMMARY**  
 - PostgreSQL is free, feature-rich, and enterprise-grade.  
@@ -255,7 +255,7 @@ Demonstrates how to connect to PostgreSQL using Python (`psycopg2`) and perform 
 
 ## Slide 28
 
-![Slide 28](images/slide28.png)
+![Slide 28](../public/images/slide28.png)
 
 **THANK YOU** 🙏  
 Any questions?
