@@ -1,22 +1,41 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
-
-// 让 Markdown 能识别 <video> 标签
 import rehypeRaw from "rehype-raw";
+import remarkGfm from "remark-gfm";
 
 export default function Presentation() {
   const [content, setContent] = useState("");
 
   useEffect(() => {
-    // 推荐使用 public 文件夹路径，最稳妥
-    fetch("postgresql-presentation.md")
+    fetch("/Group-A-PostgreSQL/postgresql-presentation.md")
       .then((res) => res.text())
-      .then(setContent);
+      .then(setContent)
+      .catch((err) => console.error("Failed to load markdown:", err));
   }, []);
 
   return (
-    <div className="page markdown-body">
-      <ReactMarkdown rehypePlugins={[rehypeRaw]}>{content}</ReactMarkdown>
+    <div className="max-w-4xl mx-auto p-6 text-gray-800 dark:text-gray-100">
+      <ReactMarkdown
+        children={content}
+        remarkPlugins={[remarkGfm]}
+        rehypePlugins={[rehypeRaw]}
+        components={{
+          img: (props) => (
+            <img
+              {...props}
+              className="rounded-xl shadow-md mx-auto my-4"
+              loading="lazy"
+            />
+          ),
+          video: (props) => (
+            <video
+              {...props}
+              controls
+              className="rounded-xl shadow-lg mx-auto my-4"
+            />
+          ),
+        }}
+      />
     </div>
   );
 }
