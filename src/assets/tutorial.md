@@ -348,5 +348,6 @@ Once done, you’ll have a secure database ready to use in **pgAdmin** or any ot
 
 
 
-## Step 3 — connect 
-<video src="/Group-A-PostgreSQL/videos/tutorial-create-table.mp4" controls></video>
+## connect 
+
+<video src="/Group-A-PostgreSQL/videos/slide18.mp4" controls></video>
