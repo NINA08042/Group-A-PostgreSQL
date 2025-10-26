@@ -70,8 +70,6 @@ Once you’ve made your selections, click **Next**.
 
 Here you pick the **installation directory**.  
 
-By default, it installs under your user folder (for example, `AppData\Local\DBeaver`). 
-
 You can click **Browse…** to change the path.  
 
 Make sure the drive has **enough free space**, then press **Next**.
