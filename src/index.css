@@ -167,3 +167,25 @@ footer {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
+.markdown-body figure {
+  text-align: center;
+  margin: 25px auto;
+}
+
+.markdown-body figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 6px;
+  font-style: italic;
+}
+
+.markdown-body video {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+
