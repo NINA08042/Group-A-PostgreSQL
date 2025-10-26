@@ -1,0 +1,51 @@
+:root {
+  --brand: #0078ff;
+  --text: #1a1a1a;
+  --muted: #555;
+  --bg: #f6f9ff;
+  --card: #ffffff;
+  --shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, -apple-system, Segoe UI, Inter, Arial, sans-serif; background: var(--bg); color: var(--text); }
+
+.navbar {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 24px; background: rgba(255,255,255,0.85); backdrop-filter: blur(10px);
+  box-shadow: var(--shadow);
+}
+.navbar h1 { font-size: 20px; letter-spacing: .3px; }
+.navbar ul { display: flex; list-style: none; gap: 20px; }
+.navbar a { color: var(--text); text-decoration: none; font-weight: 600; }
+.navbar a:hover { color: var(--brand); }
+
+.wrap { min-height: 100vh; display: flex; flex-direction: column; }
+.home {
+  max-width: 900px; margin: 60px auto; background: var(--card); padding: 40px 48px;
+  border-radius: 16px; box-shadow: var(--shadow);
+}
+.home h2 { font-size: 28px; margin-bottom: 10px; }
+.home p { color: var(--muted); margin-bottom: 18px; line-height: 1.7; }
+.quick-links { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn { display: inline-block; background: var(--brand); color: #fff; padding: 10px 16px; border-radius: 10px; text-decoration: none; }
+.btn:hover { opacity: .9; }
+
+.page {
+  max-width: 1000px; margin: 40px auto; background: var(--card);
+  padding: 36px 44px; border-radius: 16px; box-shadow: var(--shadow);
+}
+
+footer { margin-top: auto; padding: 18px; text-align: center; color: var(--muted); }
+
+.prose img, .prose video {
+  width: 100%; max-width: 900px; display: block; margin: 16px auto; border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+.prose pre {
+  background: #1e1e2e; color: #d7e0ea; padding: 16px; border-radius: 10px; overflow: auto; margin: 16px 0;
+}
+.prose code { background: #f1f4fa; padding: 2px 6px; border-radius: 6px; }
+.prose h1, .prose h2, .prose h3 { margin: 20px 0 10px; color: var(--brand); }
+.prose p, .prose li { line-height: 1.8; margin: 8px 0; }
