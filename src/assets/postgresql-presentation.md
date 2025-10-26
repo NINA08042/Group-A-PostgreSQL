@@ -1,7 +1,9 @@
 ---
-Title: "PostgreSQL Presentation"
-author: Group A: Jianing Xue B01812701 | Xinrui Gao B01819974 | Weixue Kong B01819838 | Fang Tang B01814427
-date: 2025-10-21
+title: "PostgreSQL Presentation"
+author: >
+  Group A — 
+  Jianing Xue B01812701 | Xinrui Gao B01819974 | Weixue Kong B01819838 | Fang Tang B01814427
+date: "2025-10-21"
 ---
 
 # PostgreSQL Presentation
