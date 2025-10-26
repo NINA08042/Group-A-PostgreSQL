@@ -157,3 +157,13 @@ footer {
 .markdown-body tr:nth-child(even) {
   background: #f9f9f9;
 }
+
+.markdown-body video {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
