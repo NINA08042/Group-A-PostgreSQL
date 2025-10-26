@@ -7,7 +7,7 @@ author: >
 
 # PostgreSQL Installation & DBeaver Setup
 
-## Step 1 — Download PostgreSQL
+## Step 1 — Download DBeaver
 ![Step 1](/Group-A-PostgreSQL/images/tutorial-step1.png)
 
 ## Step 2 — Install PostgreSQL
