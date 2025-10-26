@@ -1,55 +1,40 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
-import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
+import tutorialMd from "../assets/tutorial.md?raw";
 
 export default function Tutorial() {
   const [content, setContent] = useState("");
 
   useEffect(() => {
-    const mdPath = `${import.meta.env.BASE_URL}src/assets/tutorial.md`;
-
-    fetch(mdPath)
-      .then((res) => res.text())
-      .then(setContent)
-      .catch(() => setContent("# Failed to load tutorial 😢"));
+    setContent(tutorialMd);
   }, []);
 
+  const base = import.meta.env.BASE_URL;
+
   return (
-    <div className="page markdown-body">
-      <h1>🧩 PostgreSQL + DBeaver Setup Tutorial</h1>
-      <ReactMarkdown
-        remarkPlugins={[remarkGfm]}
-        rehypePlugins={[rehypeRaw]}
-        components={{
-          img: ({ node, ...props }) => (
-            <figure style={{ textAlign: "center", margin: "30px 0" }}>
+    <div className="min-h-screen bg-gradient-to-tr from-sky-50 via-indigo-50 to-purple-50 
+      dark:from-slate-900 dark:via-gray-900 dark:to-indigo-950 p-8 transition-colors duration-500">
+      <div className="max-w-4xl mx-auto bg-white/90 dark:bg-gray-900/90 shadow-xl rounded-2xl p-10 prose dark:prose-invert">
+        <ReactMarkdown
+          children={content.replaceAll(
+            "/Group-A-PostgreSQL/",
+            `${base}`
+          )}
+          remarkPlugins={[remarkGfm]}
+          rehypePlugins={[rehypeRaw]}
+          components={{
+            img: (props) => (
               <img
                 {...props}
-                style={{
-                  maxWidth: "90%",
-                  borderRadius: "12px",
-                  boxShadow: "0 6px 20px rgba(0,0,0,0.1)"
-                }}
+                className="rounded-lg shadow-md mx-auto my-4 hover:scale-105 transition-transform duration-300"
+                loading="lazy"
               />
-              {props.alt && (
-                <figcaption
-                  style={{
-                    fontSize: "0.95rem",
-                    color: "#555",
-                    marginTop: "8px",
-                    fontStyle: "italic"
-                  }}
-                >
-                  {props.alt}
-                </figcaption>
-              )}
-            </figure>
-          )
-        }}
-      >
-        {content}
-      </ReactMarkdown>
+            ),
+          }}
+        />
+      </div>
     </div>
   );
 }
