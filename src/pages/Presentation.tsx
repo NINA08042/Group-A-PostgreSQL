@@ -7,7 +7,7 @@ export default function Presentation() {
   const [content, setContent] = useState("");
 
   useEffect(() => {
-    fetch("/Group-A-PostgreSQL/postgresql-presentation.md")
+    fetch(`${import.meta.env.BASE_URL}postgresql-presentation.md`)
       .then((res) => res.text())
       .then(setContent)
       .catch((err) => console.error("Failed to load markdown:", err));
