@@ -56,18 +56,18 @@ It ensures data integrity, security, and efficient organization of information. 
 
 **Databases can be divided into two different types.** 
 
-First, **relational database**. Postgresql, mysql and oracle are all relational databases. This kind of database organizes data into rows and columns, or as stated before, in tabular form. 
+First, ***relational database***. Postgresql, mysql and oracle are all relational databases. This kind of database organizes data into rows and columns, or as stated before, in tabular form. 
 
 Then there are **non-relational databases**, which are also called **NoSQL** databases. 
 There are four types of NoSQl databases, each tailored to specific use. 
 
-The **document store** is ideal for semi-structured data, where each document is a self contained unit with a flexible structure. For example, a blog platform stores a post as a document with fields like. title: Introduction to databases author: Jane Doe content:...
+The ***document store*** is ideal for semi-structured data, where each document is a self contained unit with a flexible structure. For example, a blog platform stores a post as a document with fields like. title: Introduction to databases author: Jane Doe content:...
 
-Meanwhile, the **key value stores** treat each data item as a unique key paired with a value. Kind of like a dictionary, easy to look up and performs at high speed.
+Meanwhile, the ***key value stores*** treat each data item as a unique key paired with a value. Kind of like a dictionary, easy to look up and performs at high speed.
 
-**Graph databases**, on the other hand, focus on relationships, storing data as nodes which are entities and edges which are relations, usually used in handling interconnected data. 
+***Graph databases***, on the other hand, focus on relationships, storing data as nodes which are entities and edges which are relations, usually used in handling interconnected data. 
 
-**Column-family stores** organized data into columns rather than rows, enabling efficient storage and retrieval for large-scale analytical queries.
+***Column-family stores*** organized data into columns rather than rows, enabling efficient storage and retrieval for large-scale analytical queries.
 
 
 ## Slide 7
@@ -108,27 +108,31 @@ In this example, the attribute course number in the student table is a foreign k
 ## Slide 12
 ![Slide 12](/Group-A-PostgreSQL/images/slide12.png)
 
-The relational database has properties that enable reliable transaction processing called ACID.
-It stands for atomicity, consistency, isolation and durability.
+The relational database has properties that enable reliable transaction processing called **ACID**.
+It stands for **atomicity, consistency, isolation and durability**.
 
-Atomicity means that all changes to data are performed as if they were a single, indivisible operation.
+***Atomicity*** means that all changes to data are performed as if they were a single, indivisible operation.
 Either everything happens, or nothing happens at all.
 If one part of the transaction fails — for example, if you’re transferring money and the debit succeeds but the credit doesn’t — the database will roll everything back, as if the transaction never occurred.
-This “all-or-nothing” behavior is what protects data from partial updates.
+This **“all-or-nothing” **behavior is what protects data from partial updates.
 
-Next, Consistency.
+Next,***Consistency***.
 
-Consistency ensures that the data remains valid and logical from the beginning of the transaction to the end.
+***Consistency*** ensures that the data remains valid and logical from the beginning of the transaction to the end.
 
 The database enforces all the integrity rules — primary keys, foreign keys, check constraints — so that no transaction can bring the data into an invalid state.
 
-Isolation means that the intermediate state of a transaction is invisible to others.
+***Isolation*** means that the intermediate state of a transaction is invisible to others.
 This one is especially important when multiple users are working at the same time.
+
 In other words, when several transactions run concurrently, they appear to execute one after another — as if they were serialized. This prevents issues like dirty reads, non-repeatable reads, or phantom reads, depending on the isolation level the system enforces. 
 
-Durability ensures that once a transaction is successfully completed, its changes are permanent.
+***Durability*** ensures that once a transaction is successfully completed, its changes are permanent.
+
 Even if the system crashes right after the commit, the data remains safe.
+
 This is achieved through mechanisms like write-ahead logging — before any data is committed, it’s written to disk in a durable transaction log.
+
 When the system restarts, the database can use this log to recover to a consistent state.
 
 
