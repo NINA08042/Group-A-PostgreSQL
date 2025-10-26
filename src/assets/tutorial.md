@@ -11,6 +11,8 @@ author: >
 
 Frist, we need install **DBeaver**.
 
+https://dbeaver.io/download/
+
 **Step1**
 
 ![Step 1](/Group-A-PostgreSQL/images/tutorial-step1.png)
@@ -112,6 +114,10 @@ Follow the prompts, keep an eye on the **Include Java** option, and within minut
 
 
 ## Install PostgreSQL
+
+Also, we need install **PostgreSQL** to be connected with DBeaver.
+
+https://www.postgresql.org/download/
 
 ![Step 2](/Group-A-PostgreSQL/images/tutorial-step9.png)
 
