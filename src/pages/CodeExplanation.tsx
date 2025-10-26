@@ -8,19 +8,15 @@ export default function CodeExplanation() {
 
   useEffect(() => {
     fetch("/Group-A-PostgreSQL/assets/code-explanation.md")
-      .then(r => r.text())
-      .then(setContent)
-      .catch(() => setContent("# Failed to load code explanation"));
+      .then((res) => res.text())
+      .then(setContent);
   }, []);
 
   return (
-    <div className="page">
-      <h1>💻 Code Explanation</h1>
-      <article className="prose">
-        <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
-          {content}
-        </ReactMarkdown>
-      </article>
+    <div className="prose">
+      <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
+        {content}
+      </ReactMarkdown>
     </div>
   );
 }
