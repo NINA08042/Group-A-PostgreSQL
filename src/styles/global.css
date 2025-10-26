@@ -49,3 +49,45 @@ footer { margin-top: auto; padding: 18px; text-align: center; color: var(--muted
 .prose code { background: #f1f4fa; padding: 2px 6px; border-radius: 6px; }
 .prose h1, .prose h2, .prose h3 { margin: 20px 0 10px; color: var(--brand); }
 .prose p, .prose li { line-height: 1.8; margin: 8px 0; }
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Animation */
+@keyframes slidein {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.animate-slidein {
+  animation: slidein 0.4s ease-in-out forwards;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #a0aec0;
+  border-radius: 6px;
+}
+.dark::-webkit-scrollbar-thumb {
+  background: #4b5563;
+}
+
+/* Markdown styling */
+.prose video {
+  width: 100%;
+  border-radius: 10px;
+  margin: 1rem 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.prose img {
+  border-radius: 10px;
+  margin: 1rem 0;
+}
