@@ -1,8 +1,14 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
+// 读取 Node 环境变量，兼容 CJS
+const mode = process.env.NODE_ENV || "development";
+const basePath = mode === "production" ? "/Group-A-PostgreSQL/" : "/";
+
 export default defineConfig({
   plugins: [react()],
-  base: import.meta.env.MODE === "production" ? "/Group-A-PostgreSQL/" : "/",
-  server: { open: true },
+  base: basePath,
+  server: {
+    open: true,
+  },
 });
