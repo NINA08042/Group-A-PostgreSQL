@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <nav className="navbar">
-      <h2>PostgreSQL Learning Hub</h2>
+      <h2>Group A - CW01: PostgreSQL</h2>
       <ul>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/presentation">Presentation</Link></li>
