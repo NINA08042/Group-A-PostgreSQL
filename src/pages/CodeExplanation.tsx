@@ -1,37 +1,46 @@
+import React, { useEffect, useState } from "react";
+import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
+import remarkGfm from "remark-gfm";
+
 export default function CodeExplanation() {
+  const [content, setContent] = useState("");
+
+  useEffect(() => {
+    const mdPath = `${import.meta.env.BASE_URL}src/assets/code-explanation.md`;
+
+    fetch(mdPath)
+      .then((res) => res.text())
+      .then(setContent)
+      .catch(() => setContent("# ❌ Failed to load code explanation"));
+  }, []);
+
   return (
-    <div className="page">
-      <h1>PostgreSQL Code Examples</h1>
+    <div className="page markdown-body">
+      <h1>💻 PostgreSQL Code Explanation</h1>
 
-      <h2>Python Connection Example</h2>
-      <pre><code className="language-python">
-{`import psycopg2
-
-conn = psycopg2.connect(
-    host="localhost",
-    database="testdb",
-    user="postgres",
-    password="yourpassword"
-)
-cur = conn.cursor()
-cur.execute("SELECT * FROM users;")
-print(cur.fetchall())
-conn.close()`}
-      </code></pre>
-
-      <h2>SQL CRUD Example</h2>
-      <pre><code className="language-sql">
-{`CREATE TABLE users (
-  id SERIAL PRIMARY KEY,
-  username VARCHAR(50) UNIQUE NOT NULL,
-  email VARCHAR(100) UNIQUE NOT NULL
-);
-
-INSERT INTO users (username, email)
-VALUES ('Alice', 'alice@example.com');
-
-SELECT * FROM users;`}
-      </code></pre>
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+        rehypePlugins={[rehypeRaw]}
+        components={{
+          video: ({ node, ...props }) => (
+            <video
+              {...props}
+              controls
+              style={{
+                width: "100%",
+                maxWidth: "800px",
+                borderRadius: "12px",
+                margin: "20px auto",
+                display: "block",
+                boxShadow: "0 6px 20px rgba(0,0,0,0.15)"
+              }}
+            />
+          )
+        }}
+      >
+        {content}
+      </ReactMarkdown>
     </div>
   );
 }
