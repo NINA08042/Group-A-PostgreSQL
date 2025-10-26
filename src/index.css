@@ -188,4 +188,49 @@ footer {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
+/* 🌈 全局渐变背景 + 平滑字体 */
+body {
+  font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(135deg, #f8fafc, #eef2ff);
+  color: #111827;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* 🧱 Markdown 优化 */
+.prose img, .prose video {
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.prose h2, .prose h3 {
+  font-weight: 700;
+  color: #2563eb;
+  border-bottom: 2px solid #3b82f6;
+  padding-bottom: 4px;
+}
+
+.prose a {
+  color: #1d4ed8;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.prose a:hover {
+  text-decoration: underline;
+  color: #2563eb;
+}
+
+/* 🌙 暗色模式自动适配 */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #f1f5f9;
+  }
+  .prose h2, .prose h3 {
+    color: #60a5fa;
+    border-color: #3b82f6;
+  }
+}
+
+
 
