@@ -9,7 +9,8 @@ author: >
 
 ## 1. Creating a Database
 <video src="/Group-A-PostgreSQL/videos/code1.mp4" controls></video>
-Explanation: Create `company_db` and prepare schemas.
+**basic_sql_syntax**
+This script demonstrates the fundamentals of SQL operations. It uses ***CREATE TABLE*** to define a simple table (such as users or products), ***INSERT INTO*** to add sample rows, and ***SELECT*** to query data. It also includes examples of UPDATE for modifying records and ***DELETE*** for removing them. In short, it’s a ***basic CRUD (Create, Read, Update, Delete)*** demonstration for beginners.
 
 ## 2. Creating a Table
 <video src="/Group-A-PostgreSQL/videos/code2.mp4" controls></video>
