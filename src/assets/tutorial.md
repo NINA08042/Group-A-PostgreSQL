@@ -8,7 +8,10 @@ author: >
 # PostgreSQL Installation & DBeaver Setup
 
 ## Step 1 — Download DBeaver
+Frist, we need install **DBeaver**.
 ![Step 1](/Group-A-PostgreSQL/images/tutorial-step1.png)
+Take ***Windows*** as an example.
+![Step 1](/Group-A-PostgreSQL/images/tutorial-step2.png)
 
 ## Step 2 — Install PostgreSQL
 ![Step 2](/Group-A-PostgreSQL/images/tutorial-step2.png)
