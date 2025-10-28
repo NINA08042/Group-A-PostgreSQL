@@ -15,7 +15,7 @@ export default function Presentation() {
 
   return (
     <div className="page markdown-body">
-      <h1>📊 PostgreSQL Presentation</h1>
+      <h1>PostgreSQL Presentation</h1>
       <ReactMarkdown
         children={content.replaceAll("/Group-A-PostgreSQL/", `${base}`)}
         remarkPlugins={[remarkGfm]}
