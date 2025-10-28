@@ -7,7 +7,8 @@ export default function Welcome() {
       <h1>Welcome to Group A: CW01 -- PostgreSQL</h1>
 
       <p>
-      
+      Click the navigation bar above to start exploring different sections of
+        our PostgreSQL learning journey 
       </p>
 
       <Link
