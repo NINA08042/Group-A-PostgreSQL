@@ -11,3 +11,17 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     </BrowserRouter>
   </React.StrictMode>
 );
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Group A：CW01 — PostgreSQL</title>
+  </head>
+  <body>
+ <h1>Welcome to Group A: CW01 -- PostgreSQL</h1>
+    <h2>Click the tab to start!</h2>
+  </body>
+</html>
+
