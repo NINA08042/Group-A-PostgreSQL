@@ -1,3 +1,10 @@
+---
+Title: "PostgreSQL Presentation"
+author: >
+  Group A — 
+  Jianing Xue B01812701 | Xinrui Gao B01819974 | Weixue Kong B01819838 | Fang Tang B01814427
+---
+
 # Introduction to PostgreSQL
 
 ## What is PostgreSQL?
