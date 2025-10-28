@@ -3,9 +3,9 @@ import React from "react";
 export default function Welcome() {
   return (
     <div className="page markdown-body" style={{ textAlign: "center" }}>
-      <h1>Welcome to Group A PostgreSQL 🎓</h1>
+      <h1>Welcome to Group A PostgreSQL</h1>
       <p>
-        Explore PostgreSQL basics, setup tutorials, and code explanations with Group A 🚀
+        Click the navigation bar above to start exploring different sections of our PostgreSQL learning journey！
       </p>
 
 
