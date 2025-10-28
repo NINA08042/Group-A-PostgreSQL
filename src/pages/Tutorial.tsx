@@ -15,7 +15,7 @@ export default function Tutorial() {
 
   return (
     <div className="page markdown-body">
-      <h1>🧰 PostgreSQL Setup Tutorial</h1>
+      <h1>PostgreSQL Setup Tutorial</h1>
       <ReactMarkdown
         children={content.replaceAll("/Group-A-PostgreSQL/", `${base}`)}
         remarkPlugins={[remarkGfm]}
