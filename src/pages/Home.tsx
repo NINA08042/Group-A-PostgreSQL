@@ -14,11 +14,7 @@ export default function Home() {
   return (
     <div className="page markdown-body">
 
-      <h1>Welcome to Group A PostgreSQL 🎓</h1>
-      <p>
-        Click the navigation bar above to start exploring different sections of
-        our PostgreSQL learning journey 🚀
-      </p>
+    
       <hr style={{ margin: "20px 0" }} />
 
  
@@ -33,3 +29,18 @@ export default function Home() {
     </div>
   );
 }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Group A：CW01 — PostgreSQL</title>
+  </head>
+  <body>
+    < <h1>Welcome to Group A PostgreSQL 🎓</h1>
+      <p>
+        Click the navigation bar above to start exploring different sections of
+        our PostgreSQL learning journey 🚀
+      </p>
+  </body>
+</html>
