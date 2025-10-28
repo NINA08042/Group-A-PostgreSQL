@@ -37,10 +37,10 @@ export default function Home() {
     <title>Group A：CW01 — PostgreSQL</title>
   </head>
   <body>
-    < <h1>Welcome to Group A PostgreSQL 🎓</h1>
+    < <h1>Welcome to Group A PostgreSQL</h1>
       <p>
         Click the navigation bar above to start exploring different sections of
-        our PostgreSQL learning journey 🚀
+        our PostgreSQL learning journey 
       </p>
   </body>
 </html>
