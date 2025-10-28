@@ -1,34 +1,30 @@
-import React from "react";
+import { Link } from "react-router-dom";
+import "../index.css";
 
 export default function Welcome() {
   return (
     <div className="page markdown-body" style={{ textAlign: "center" }}>
-      <h1>Welcome to Group A PostgreSQL</h1>
+      <h1>Welcome to Group A PostgreSQL Learning Hub</h1>
+
       <p>
-        Click the navigation bar above to start exploring different sections of our PostgreSQL learning journey！
+     Click the navigation bar above to start exploring different sections of our PostgreSQL learning journey
       </p>
 
-
-      <a
-        href="https://github.com/NINA08042/Group-A-PostgreSQL"
-        target="_blank"
-        rel="noopener noreferrer"
+      <Link
+        to="/home"
         style={{
-          display: "inline-block",
-          padding: "12px 22px",
-          marginTop: "20px",
-          backgroundColor: "#2563eb",
+          padding: "12px 24px",
+          background: "#0078ff",
           color: "white",
           borderRadius: "8px",
           textDecoration: "none",
-          fontWeight: "bold",
-          transition: "0.3s",
+          fontSize: "1rem",
+          marginTop: "24px",
+          display: "inline-block",
         }}
-        onMouseOver={(e) => (e.currentTarget.style.backgroundColor = "#1d4ed8")}
-        onMouseOut={(e) => (e.currentTarget.style.backgroundColor = "#2563eb")}
       >
-        View GitHub Repository
-      </a>
+        Start Learning ➜
+      </Link>
     </div>
   );
 }
