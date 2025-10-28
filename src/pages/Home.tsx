@@ -14,33 +14,20 @@ export default function Home() {
   return (
     <div className="page markdown-body">
 
-    
-      <hr style={{ margin: "20px 0" }} />
 
- 
-      {content && (
-        <ReactMarkdown
-          children={content}
-          remarkPlugins={[remarkGfm]}
-          rehypePlugins={[rehypeRaw]}
-        />
-      )}
-
-    </div>
-  );
-}
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Group A：CW01 — PostgreSQL</title>
-  </head>
-  <body>
-    < <h1>Welcome to Group A PostgreSQL</h1>
+      <h1>Welcome to Group A PostgreSQL </h1>
       <p>
         Click the navigation bar above to start exploring different sections of
         our PostgreSQL learning journey 
       </p>
-  </body>
-</html>
+      <hr style={{ margin: "20px 0" }} />
+
+  
+      <ReactMarkdown
+        children={content}
+        remarkPlugins={[remarkGfm]}
+        rehypePlugins={[rehypeRaw]}
+      />
+    </div>
+  );
+}
