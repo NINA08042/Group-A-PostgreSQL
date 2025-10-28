@@ -13,11 +13,20 @@ export default function Home() {
 
   return (
     <div className="page markdown-body">
+
+      <h1>Welcome to Group A PostgreSQL</h1>
+      <p>
+        Click the navigation bar above to start exploring different sections of
+        our PostgreSQL learning journey=
+      </p>
+      <hr style={{ margin: "20px 0" }} />
+
       <ReactMarkdown
         children={content}
         remarkPlugins={[remarkGfm]}
         rehypePlugins={[rehypeRaw]}
       />
+      
     </div>
   );
 }
